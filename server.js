@@ -52,6 +52,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects',
+        message: 'Projects details to be added here.'
+    })
+})
 app.get('/bad', (req, res) => {
     res.send({
         name: "Bad Request",
